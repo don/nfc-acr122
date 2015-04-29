@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"NfcIdPlugin\"><param name=\"android-package\" value=\"com.megster.nfcid.plugin.NfcIdPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.megster.nfcid.plugin"
+        },
+        "com.megster.cordova.nfcid.plugin": {
+            "PACKAGE_NAME": "com.megster.nfcid.plugin"
+        }
+    },
+    "dependent_plugins": {}
+}

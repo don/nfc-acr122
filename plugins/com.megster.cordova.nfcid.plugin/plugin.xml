@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.megster.cordova.nfcid.plugin"
+    version="0.0.1">
+    <name>NFC ID Plugin</name>
+    <description>Read Mifare Classic Ids from ACS122U</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, nfc, acs122u</keywords>
+    <repo></repo>
+    <issue></issue>
+
+<!--
+    <js-module src="www/device.js" name="device">
+        <clobbers target="device" />
+    </js-module>
+    -->
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NfcIdPlugin" >
+                <param name="android-package" value="com.megster.nfcid.plugin.NfcIdPlugin"/>
+            </feature>
+        </config-file>
+        <!--
+        <source-file src="src/android/Device.java" target-dir="src/org/apache/cordova/device" />
+        -->
+    </platform>
+
+</plugin>
